@@ -1,9 +1,9 @@
 {
   "name": "auctiora",
   "scripts": {
-    "dev": "live-server dist",
-    "css": "npx tailwindcss -i css/styles.css -o ./dist/assets/main.css --watch",
-    "build:css": "tailwindcss -i css/styles.css -o ./dist/assets/main.css"
+    "dev": "live-server docs",
+    "css": "npx tailwindcss -i css/styles.css -o ./docs/assets/main.css --watch",
+    "build:css": "tailwindcss -i css/styles.css -o ./docs/assets/main.css"
   },
   "repository": {
     "type": "git",

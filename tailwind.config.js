@@ -2,7 +2,7 @@
 module.exports = {
   mode: 'jit',
   purge: [
-    './dist/**/*.html'
+    './docs/**/*.html'
   ],
   darkMode: false,
   content: ["./**/*.{html}"],
