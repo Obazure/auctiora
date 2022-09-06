@@ -35,13 +35,13 @@ body {
 }
 
 .divider {
+    margin: 2rem auto;
     display: block;
-    border-top: 3px;
-    border-color: white;
-    background-color: white;
-    height: 1px;
+    background-color: #fff;
+    border: 0 solid #fff;
+    border-color: #fff;
+    height: 2px;
     width: 60%;
     min-width: 8rem;
-    max-width: 48rem;
-    margin: 0 auto;
+    max-width: 80vw;
 }
