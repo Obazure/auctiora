@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
@@ -792,7 +792,7 @@ body {
   z-index: -1;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .banner-image {
     -o-object-position: 77% 0;
        object-position: 77% 0;
@@ -813,6 +813,56 @@ body {
   width: 60%;
   min-width: 8rem;
   max-width: 80vw;
+}
+
+.btn-to-top {
+  display: none;
+  text-align: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  z-index: 1000;
+  border: none;
+  outline: none;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+  -webkit-animation: fade 1s linear;
+          animation: fade 1s linear;
+}
+
+.btn-to-top:hover {
+  background-color: #444444;
+  color: white;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.7;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .before\:inline-block::before{
