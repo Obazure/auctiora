@@ -596,6 +596,11 @@ video {
   margin-right: auto;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-16{
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -626,8 +631,8 @@ video {
   min-height: 30vh;
 }
 
-.min-h-\[60vh\]{
-  min-height: 60vh;
+.min-h-\[50vh\]{
+  min-height: 50vh;
 }
 
 .w-2\/3{
@@ -757,6 +762,11 @@ video {
 .text-red-500{
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .shadow-xl{
@@ -969,6 +979,11 @@ body {
     line-height: 1.75rem;
   }
 
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -999,8 +1014,8 @@ body {
     width: 33.333333%;
   }
 
-  .lg\:w-1\/4{
-    width: 25%;
+  .lg\:w-1\/5{
+    width: 20%;
   }
 
   .lg\:flex-row-reverse{
