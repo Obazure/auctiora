@@ -7,7 +7,7 @@ function scrollToTop() {
 }
 
 let scrollToTopButtons = undefined;
-function listenScroll() {
+const listenScroll = () => {
     if (scrollToTopButtons !== undefined && (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)) {
         for (let i = 0; i < scrollToTopButtons.length; i++) {
             scrollToTopButtons[i].style.display = "block";
