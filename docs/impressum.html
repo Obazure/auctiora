@@ -28,102 +28,132 @@
     />
   </head>
 
-  <body class="text-white bg-prime">
-    <div class="container mx-auto p-4">
-      <header class="flex justify-end py-8 gap-2 md:gap-8">
+  <body class="bg-white">
+    <header class="nav-header bg-prime text-white relative p-2">
+      <a href="index.html">
+        <img
+          class="h-full absolute"
+          src="assets/images/auctiora-logo-full.png"
+          alt="Auctiora logo"
+        />
+      </a>
+      <div class="container mx-auto flex justify-end py-8 gap-2 md:gap-8">
         <a class="hover:opacity-75 md:text-xl" href="tel:+498945710970">
           +49 89 45710970
         </a>
         <a class="hover:opacity-75 md:text-xl" href="mailto:info@auctiora.com">
           info@auctiora.com
         </a>
-      </header>
-      <section
-        class="flex flex-col py-8 md:py-16 lg:py-24 gap-y-8 text-center min-h-[65vh] h-[32rem] md:min-h-\[80vh\] justify-around"
-      >
-        <img
-          class="banner-image"
-          src="assets/images/auctiora-banner.png"
-          alt="Auctiora happy client banner image"
-        />
-        <img
-          class="mx-auto w-2/3 md:w-1/2 lg:w-1/3"
-          src="assets/images/auctiora-logo-full.png"
-          alt="Auctiora logo"
-        />
-        <h1 class="font-semibold text-xl md:text-3xl">
-          Auctiora - Die Zukunftsagentur für Wohnen
-        </h1>
-        <p class="mx-auto w-3/4 font-light md:text-2xl">
-          Wir sind eine Full-Service-Immobilienagentur, bei der die Menschen
-          hinter der Immobilie im Mittelpunkt stehen.
+      </div>
+    </header>
+
+    <article class="container mx-auto p-2 flex flex-col py-8 gap-8">
+      <div class="breadcrumbs">
+        <a href="index.html">Startseite </a>
+        <span class="breadcrumb_last" aria-current="page"> Impressum </span>
+      </div>
+
+      <h1 class="text-2xl md:text-3xl font-bold uppercase">Impressum</h1>
+
+      <p>Verantwortlich für den Inhalt:</p>
+
+      <section class="flex flex-col gap-3">
+        <h3 class="text-xl font-bold">Auctiora Projektmanagement GmbH</h3>
+        <p>
+          Richard-Strauss-Strasse 35<br />
+          81677 München – Bogenhausen<br />
+          T
+          <a
+            href="tel:+498945710970"
+            class="hover:opacity-75 hover:underline text-prime"
+          >
+            +49 89 45710970
+          </a>
+          <br />
+          F
+          <a
+            href="fax:+4989457109717"
+            class="hover:opacity-75 hover:underline text-prime"
+          >
+            +49 89 457109717 </a
+          ><br />
+          E
+          <a
+            href="mailto:info@auctiora.com"
+            class="hover:opacity-75 hover:underline text-prime"
+          >
+            info@auctiora.com
+          </a>
         </p>
-        <a
-          class="mx-auto text-red-500 bg-white mt-8 py-3 px-6 rounded-xl drop-shadow-lg font-semibold shadow-xl hover:bg-gray-700 hover:text-white md:text-xl text-black"
-          href="mailto:info@auctiora.com"
-        >
-          Jetzt Beratungstermin vereinbaren
-        </a>
       </section>
-      <div class="divider my-16"></div>
-      <section
-        class="flex flex-col min-h-[30vh] relative w-full py-8 md:py-16 gap-y-8 md:gap-y-16"
-      >
-        <img
-          src="assets/images/maintenance-icon.png"
-          alt="Auctiora derzeit wird unsere Website mit Große Update überarbeitet"
-          class="w-1/2 md:w-1/3 lg:w-1/4 mx-auto"
-        />
-        <h3
-          class="font-semibold text-center text-xl md:text-2xl md:w-4/5 lg:w-3/5 md:mx-auto"
-        >
-          Derzeit wird unsere Website mit einem großen Update überarbeitet und
-          sowie mit innovativen Dienstleistungen-Produkte aktualisiert.
+      <section class="flex flex-col gap-3">
+        <h3 class="text-xl font-bold">Geschäftsführerin:</h3>
+        <p>Varduhi Arakelyan</p>
+      </section>
+      <section class="flex flex-col gap-3">
+        <h3 class="text-xl font-bold">Steuernummer:</h3>
+        <p>143/116/31730</p>
+      </section>
+      <section class="flex flex-col gap-3">
+        <h3 class="text-xl font-bold">USt-IdNr.:</h3>
+        <p>DE 316398951</p>
+      </section>
+      <section class="flex flex-col gap-3">
+        <h3 class="text-xl font-bold">
+          Verbraucherinformation gemäß Verordnung EU Nr. 524/2013
         </h3>
-        <!-- <ul
-          class="flex flex-col md:flex-row gap-4 md:gap-1 md:justify-center md:text-xl"
-        >
-          <li
-            class="before:px-2 before:inline-block before:content-['•'] md:before:first:content-['']"
+        <p>
+          Die Europäische Kommission stellt eine Plattform zur
+          Online-Streitbeilegung (OS) bereit. Die Plattform finden Sie unter
+          <a
+            href="https://ec.europa.eu/consumers/odr/"
+            class="hover:underline underline"
           >
-            Miet- und Kaufberatung
-          </li>
-          <li
-            class="before:px-2 before:inline-block before:content-['•'] md:before:content-['|']"
-          >
-            Verkauf
-          </li>
-          <li
-            class="before:px-2 before:inline-block before:content-['•'] md:before:content-['|']"
-          >
-            Vermietung
-          </li>
-          <li
-            class="before:px-2 before:inline-block before:content-['•'] md:before:content-['|']"
-          >
-            Bewertung
-          </li>
-        </ul> -->
+            https://ec.europa.eu/consumers/odr/
+          </a>
+        </p>
       </section>
-      <div class="divider my-16"></div>
-    </div>
-    <section
-      class="relative min-h-[50vh] h-[24rem] w-screen -mx-4 md:w-full md:mx-0"
-    >
-      <iframe
-        width="100%"
-        height="100%"
-        id="gmap_canvas"
-        src="https://www.google.com/maps/embed/v1/search?q=Auctiora%20Projektmanagement%20GmbH%2C%20Richard-Strauss-Stra%C3%9Fe%2C%20Munich%2C%20Germany&key=AIzaSyBfe4cDD_3i3NAxLZyAmVxo4y3xDJpze2E"
-        frameborder="0"
-        scrolling="no"
-        allowfullscreen
-        loading="lazy"
-        marginheight="0"
-        marginwidth="0"
-      ></iframe>
-    </section>
-    <div class="container mx-auto p-4">
+      <section class="flex flex-col gap-3">
+        <h3 class="text-xl font-bold">Streitbeilegungsverfahren</h3>
+        <p>
+          Auctiora Projektmanagement GmbH ist nicht bereit und verpflichtet, an
+          Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
+          teilzunehmen.
+        </p>
+      </section>
+      <section class="flex flex-col gap-3">
+        <p class="text-lg font-semibold">Gesamtherstellung:</p>
+        <p>
+          Diese Website wurde produziert von Auctiora Projektmanagement GmbH<br />
+          <a
+            class="primary"
+            href="//auctiora.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            auctiora.com
+          </a>
+        </p>
+      </section>
+    </article>
+
+    <footer class="bg-prime text-white">
+      <section
+        class="relative min-h-[50vh] h-[24rem] w-screen -mx-4 md:w-full md:mx-0"
+      >
+        <iframe
+          width="100%"
+          height="100%"
+          id="gmap_canvas"
+          src="https://www.google.com/maps/embed/v1/search?q=Auctiora%20Projektmanagement%20GmbH%2C%20Richard-Strauss-Stra%C3%9Fe%2C%20Munich%2C%20Germany&key=AIzaSyBfe4cDD_3i3NAxLZyAmVxo4y3xDJpze2E"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen
+          loading="lazy"
+          marginheight="0"
+          marginwidth="0"
+        ></iframe>
+      </section>
       <section
         class="flex flex-col md:flex-row py-8 md:py-16 md:text-xl lg:flex-row-reverse md:justify-evenly"
       >
@@ -213,7 +243,8 @@
           vorbehalten.
         </p>
       </section>
-    </div>
+    </footer>
+
     <button
       onclick="scrollToTop()"
       class="btn-to-top"
