@@ -766,10 +766,6 @@ video {
   text-align: center;
 }
 
-.text-justify{
-  text-align: justify;
-}
-
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -940,7 +936,7 @@ body {
   }
 }
 
-.nav-header {
+/* .nav-header {
   margin-bottom: 1.5rem;
 }
 
@@ -956,7 +952,7 @@ body {
   top: 0;
   rotate: -1deg;
   z-index: -2;
-}
+} */
 
 .breadcrumbs {
   display: flex;
@@ -1132,6 +1128,10 @@ body {
 
   .lg\:flex-row-reverse{
     flex-direction: row-reverse;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:py-24{
