@@ -36,9 +36,9 @@ body {
   }
 }
 
-.line-list *:not(:first-child):before {
-  content: " | ";
-  text-decoration: none !important;
+.line-list *:not(:first-child) {
+  border-left: 1px solid #fff;
+  padding: 0 0.5rem;
 }
 
 .divider {

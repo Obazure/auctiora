@@ -29,24 +29,30 @@
   </head>
 
   <body class="bg-white">
-    <header class="bg-prime text-white relative p-2">
-      <a
-        href="index.html"
-        class="absolute h-full w-full flex items-center justify-start lg:justify-center"
+    <header class="bg-prime text-white p-2">
+      <div
+        class="container mx-auto relative flex justify-start lg:justify-center"
       >
-        <img
-          class="h-14 md:h-full"
-          src="assets/images/auctiora-logo-full.png"
-          alt="Auctiora logo"
-        />
-      </a>
-      <div class="container mx-auto flex justify-end py-8 gap-2 md:gap-8">
-        <a class="hover:opacity-75 md:text-xl" href="tel:+498945710970">
-          +49 89 45710970
-        </a>
-        <a class="hover:opacity-75 md:text-xl" href="mailto:info@auctiora.com">
-          info@auctiora.com
-        </a>
+        <div class="absolute h-full flex items-center z-0">
+          <a href="index.html" class="h-14 md:h-full">
+            <img
+              class="h-full"
+              src="assets/images/auctiora-logo-full.png"
+              alt="Auctiora logo"
+            />
+          </a>
+        </div>
+        <div class="flex ml-auto flex-col md:flex-row py-8 gap-2 md:gap-8 z-10">
+          <a class="hover:opacity-75 md:text-xl" href="tel:+498945710970">
+            +49 89 45710970
+          </a>
+          <a
+            class="hover:opacity-75 md:text-xl"
+            href="mailto:info@auctiora.com"
+          >
+            info@auctiora.com
+          </a>
+        </div>
       </div>
     </header>
 
