@@ -91,24 +91,6 @@ body {
   }
 }
 
-/* .nav-header {
-  margin-bottom: 1.5rem;
-}
-
-.nav-header::after {
-  content: '';
-  background-color: #ff0000;
-  height: 100%;
-  width: 120%;
-  margin-left: -10px;
-  margin-right: -10px;
-  align-self: center;
-  position: absolute;
-  top: 0;
-  rotate: -1deg;
-  z-index: -2;
-} */
-
 .breadcrumbs {
   display: flex;
   flex-direction: row;
