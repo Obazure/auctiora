@@ -1,7 +1,185 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 100;
+
+  src: url("/assets/fonts/Raleway-Thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 100;
+
+  src: url("/assets/fonts/Raleway-ThinItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 200;
+
+  src: url("/assets/fonts/Raleway-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 200;
+
+  src: url("/assets/fonts/Raleway-ExtraLightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  src: url("/assets/fonts/Raleway-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 300;
+
+  src: url("/assets/fonts/Raleway-LightItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  src: url("/assets/fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 400;
+
+  src: url("/assets/fonts/Raleway-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  src: url("/assets/fonts/Raleway-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 500;
+
+  src: url("/assets/fonts/Raleway-MediumItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  src: url("/assets/fonts/Raleway-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 600;
+
+  src: url("/assets/fonts/Raleway-SemiBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url("/assets/fonts/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  src: url("/assets/fonts/Raleway-BoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url("/assets/fonts/Raleway-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  src: url("/assets/fonts/Raleway-ExtraBoldItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  src: url("/assets/fonts/Raleway-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Raleway";
+
+  font-style: italic;
+
+  font-weight: 700;
+
+  src: url("/assets/fonts/Raleway-BlackItalic.ttf") format("truetype");
+}
 
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -32,6 +210,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -46,6 +225,8 @@ html {
   /* 3 */
   font-family: Raleway;
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
 }
 
 /*
@@ -412,7 +593,13 @@ video {
   height: auto;
 }
 
-*, ::before, ::after{
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
+}
+
+*, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -459,7 +646,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::-webkit-backdrop{
+::backdrop {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -506,341 +693,293 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop{
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-}
-
-.container{
+.container {
   width: 100%;
 }
 
-@media (min-width: 640px){
-  .container{
+@media (min-width: 640px) {
+  .container {
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px){
-  .container{
+@media (min-width: 768px) {
+  .container {
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px){
-  .container{
+@media (min-width: 1024px) {
+  .container {
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px){
-  .container{
+@media (min-width: 1280px) {
+  .container {
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px){
-  .container{
+@media (min-width: 1536px) {
+  .container {
     max-width: 1536px;
   }
 }
 
-.absolute{
+.absolute {
   position: absolute;
 }
 
-.relative{
+.relative {
   position: relative;
 }
 
-.z-0{
+.z-0 {
   z-index: 0;
 }
 
-.z-10{
+.z-10 {
   z-index: 10;
 }
 
-.mx-auto{
+.mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.my-16{
+.my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
-.ml-auto{
+.ml-auto {
   margin-left: auto;
 }
 
-.mt-8{
+.mt-8 {
   margin-top: 2rem;
 }
 
-.flex{
+.flex {
   display: flex;
 }
 
-.h-full{
+.h-full {
   height: 100%;
 }
 
-.h-14{
+.h-14 {
   height: 3.5rem;
 }
 
-.h-\[24rem\]{
+.h-\[24rem\] {
   height: 24rem;
 }
 
-.h-6{
+.h-6 {
   height: 1.5rem;
 }
 
-.h-\[32rem\]{
+.h-\[32rem\] {
   height: 32rem;
 }
 
-.min-h-\[50vh\]{
+.min-h-\[50vh\] {
   min-height: 50vh;
 }
 
-.min-h-\[30vh\]{
+.min-h-\[30vh\] {
   min-height: 30vh;
 }
 
-.min-h-\[65vh\]{
+.min-h-\[65vh\] {
   min-height: 65vh;
 }
 
-.w-screen{
+.w-screen {
   width: 100vw;
 }
 
-.w-6{
+.w-6 {
   width: 1.5rem;
 }
 
-.w-1\/2{
+.w-1\/2 {
   width: 50%;
 }
 
-.w-2\/3{
+.w-2\/3 {
   width: 66.666667%;
 }
 
-.w-3\/4{
+.w-3\/4 {
   width: 75%;
 }
 
-.w-full{
+.w-full {
   width: 100%;
 }
 
-.list-disc{
+.list-disc {
   list-style-type: disc;
 }
 
-.flex-row{
+.flex-row {
   flex-direction: row;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
 
-.items-center{
+.items-center {
   align-items: center;
 }
 
-.justify-start{
+.justify-start {
   justify-content: flex-start;
 }
 
-.justify-end{
+.justify-end {
   justify-content: flex-end;
 }
 
-.justify-center{
+.justify-center {
   justify-content: center;
 }
 
-.justify-around{
+.justify-around {
   justify-content: space-around;
 }
 
-.gap-2{
+.gap-2 {
   gap: 0.5rem;
 }
 
-.gap-8{
+.gap-8 {
   gap: 2rem;
 }
 
-.gap-3{
+.gap-3 {
   gap: 0.75rem;
 }
 
-.gap-4{
+.gap-4 {
   gap: 1rem;
 }
 
-.gap-y-8{
+.gap-y-8 {
   row-gap: 2rem;
 }
 
-.rounded-xl{
+.rounded-xl {
   border-radius: 0.75rem;
 }
 
-.bg-white{
+.bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-2{
+.p-2 {
   padding: 0.5rem;
 }
 
-.p-4{
+.p-4 {
   padding: 1rem;
 }
 
-.py-8{
+.py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.py-4{
+.py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-.py-3{
+.py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
 
-.px-6{
+.px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.pb-8{
+.pb-8 {
   padding-bottom: 2rem;
 }
 
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.text-2xl{
+.text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.text-xl{
+.text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.text-lg{
+.text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.text-xs{
+.text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
 }
 
-.font-bold{
+.font-bold {
   font-weight: 700;
 }
 
-.font-semibold{
+.font-semibold {
   font-weight: 600;
 }
 
-.font-light{
+.font-light {
   font-weight: 300;
 }
 
-.uppercase{
+.uppercase {
   text-transform: uppercase;
 }
 
-.text-white{
+.text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-500{
+.text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.text-black{
+.text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.underline{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.underline {
+  text-decoration-line: underline;
 }
 
-.shadow-xl{
+.shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.drop-shadow-lg{
+.drop-shadow-lg {
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -919,23 +1058,12 @@ body {
     drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
-  -webkit-animation: fade 0.5s linear;
-          animation: fade 0.5s linear;
+  animation: fade 0.5s linear;
 }
 
 .btn-to-top:hover {
   background-color: #444444;
   color: white;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0.8;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fade {
@@ -973,167 +1101,166 @@ body {
   text-decoration: none !important;
 }
 
-.before\:inline-block::before{
+.before\:inline-block::before {
   content: var(--tw-content);
   display: inline-block;
 }
 
-.before\:px-2::before{
+.before\:px-2::before {
   content: var(--tw-content);
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
-.before\:content-\[\'\2022\'\]::before{
+.before\:content-\[\'\2022\'\]::before {
   --tw-content: '•';
   content: var(--tw-content);
 }
 
-.hover\:bg-gray-700:hover{
+.hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
 
-.hover\:text-white:hover{
+.hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:underline:hover{
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
-.hover\:opacity-75:hover{
+.hover\:opacity-75:hover {
   opacity: 0.75;
 }
 
-@media (min-width: 768px){
-  .md\:mx-0{
+@media (min-width: 768px) {
+  .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .md\:mx-auto{
+  .md\:mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .md\:h-full{
+  .md\:h-full {
     height: 100%;
   }
 
-  .md\:w-full{
+  .md\:w-full {
     width: 100%;
   }
 
-  .md\:w-1\/3{
+  .md\:w-1\/3 {
     width: 33.333333%;
   }
 
-  .md\:w-1\/2{
+  .md\:w-1\/2 {
     width: 50%;
   }
 
-  .md\:w-4\/5{
+  .md\:w-4\/5 {
     width: 80%;
   }
 
-  .md\:flex-row{
+  .md\:flex-row {
     flex-direction: row;
   }
 
-  .md\:justify-center{
+  .md\:justify-center {
     justify-content: center;
   }
 
-  .md\:justify-evenly{
+  .md\:justify-evenly {
     justify-content: space-evenly;
   }
 
-  .md\:gap-8{
+  .md\:gap-8 {
     gap: 2rem;
   }
 
-  .md\:gap-3{
+  .md\:gap-3 {
     gap: 0.75rem;
   }
 
-  .md\:gap-1{
+  .md\:gap-1 {
     gap: 0.25rem;
   }
 
-  .md\:gap-y-16{
+  .md\:gap-y-16 {
     row-gap: 4rem;
   }
 
-  .md\:py-16{
+  .md\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
 
-  .md\:text-xl{
+  .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
-  .md\:text-3xl{
+  .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
 
-  .md\:text-base{
+  .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 
-  .md\:text-2xl{
+  .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .md\:before\:content-\[\'\|\'\]::before{
+  .md\:before\:content-\[\'\|\'\]::before {
     --tw-content: '|';
     content: var(--tw-content);
   }
 
-  .md\:before\:first\:content-\[\'\'\]:first-child::before{
+  .md\:before\:first\:content-\[\'\'\]:first-child::before {
     --tw-content: '';
     content: var(--tw-content);
   }
 }
 
-@media (min-width: 1024px){
-  .lg\:w-1\/5{
+@media (min-width: 1024px) {
+  .lg\:w-1\/5 {
     width: 20%;
   }
 
-  .lg\:w-1\/3{
+  .lg\:w-1\/3 {
     width: 33.333333%;
   }
 
-  .lg\:w-1\/4{
+  .lg\:w-1\/4 {
     width: 25%;
   }
 
-  .lg\:w-3\/5{
+  .lg\:w-3\/5 {
     width: 60%;
   }
 
-  .lg\:flex-row-reverse{
+  .lg\:flex-row-reverse {
     flex-direction: row-reverse;
   }
 
-  .lg\:justify-center{
+  .lg\:justify-center {
     justify-content: center;
   }
 
-  .lg\:py-24{
+  .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
   }
 
-  .lg\:text-lg{
+  .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
